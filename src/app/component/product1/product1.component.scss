@@ -1,0 +1,275 @@
+// .product1{
+//   margin-top: 10rem;
+// }
+h1{
+  font-family: 'Montserrat-Medium';
+  font-size:28px;
+  text-transform: capitalize;
+}
+// ul{
+//   list-style: disc !important;
+//   padding: 0;
+// }
+ul{
+  li{
+    font-family: 'Montserrat-light';
+    // list-style: disc;
+    list-style: none;
+  }
+}
+p{
+  font-family: 'Montserrat-light';
+  text-align: justify;
+}
+
+@media (min-width:320px) and (max-width:768px){
+  .product1{
+    margin-top: 6rem;
+  }
+  .row{
+    flex-direction: column;
+    text-align: center;
+    .col-7 {
+      width: 100%;;
+    }
+  }
+h1{
+    font-size: 17px;
+  }
+
+  ul{
+    li{
+      font-size: 12px;
+    }
+  }
+  p{
+    font-size: 12px;
+  }
+}
+
+@media (min-width:769px) and (max-width:999px){
+  .product1{
+    margin-top: 7rem;
+  }
+  .row{
+    flex-direction: column;
+    text-align: center;
+  }
+h1{
+    font-size: 19px;
+  }
+
+  ul{
+    li{
+      font-size: 13.2px;
+    }
+  }
+  p{
+    font-size: 13.2px;
+  }
+}
+
+@media (min-width:1000px) and (max-width:1220px){
+  .product1{
+    margin-top: 7.8rem;
+  }
+  .row{
+    flex-direction: row;
+    // text-align: center;
+  }
+h1{
+    font-size: 22px;
+  }
+
+  ul{
+    li{
+      font-size: 14px;
+    }
+  }
+  p{
+    font-size: 14px;
+  }
+}
+@media (min-width:1221px) and (max-width:1440px){
+  // .product1{
+  //   margin-top: 8.5rem;
+  // }
+  .row{
+    flex-direction: row;
+    // text-align: center;
+  }
+h1{
+    font-size: 23px;
+  }
+
+  ul{
+    li{
+      font-size: 14.5px;
+    }
+  }
+  p{
+    font-size: 14.5px;
+  }
+}
+
+@media (min-width:1550px){
+  // .product1{
+  //   margin-top: 9rem;
+  // }
+  .row{
+    flex-direction: row;
+    // text-align: center;
+  }
+h1{
+    font-size: 26px;
+  }
+
+  ul{
+    li{
+      font-size: 16px;
+    }
+  }
+  p{
+    font-size: 16px;
+  }
+}
+
+
+
+.breadcrumbs {
+  list-style: none;
+  display: flex;
+  gap: 0.75rem;
+  background: #FDA172;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px var(--pink-50);
+  position:absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.breadcrumbs-item {
+  padding: 0.75rem 0.75rem 0.75rem 1.5rem;
+  background: var(--pink-100);
+  color: var(--pink-700);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  list-style: none;
+
+}
+
+.breadcrumbs-item::before,
+.breadcrumbs-item::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0.75rem;
+  top: 0;
+  left: 0;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.breadcrumbs-item::before {
+  background: var(--pink-50);
+}
+
+.breadcrumbs-item::after {
+  left: 100%;
+  background: var(--pink-100);
+}
+
+.breadcrumbs-item:first-child {
+  padding: 0.75rem;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.breadcrumbs-item:first-child::before {
+  display: none;
+}
+
+
+
+
+a {
+  color: #2c3f4c;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+
+}
+i{
+  font-size: 12px;
+  padding: 0 2px;
+}
+nav{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  border-radius: 1px;
+  .title{
+    // color: #eb7a24;
+    // color: #FDA172;
+    color: orange;
+    margin-bottom: 1rem;
+    font-size: 26px;
+  }
+  .cd-breadcrumb{
+    background: aliceblue;
+    padding: 2px 15px;
+    li{
+      display: inline-block;
+    }
+  }
+
+}
+.current {
+  color: #eb7a24;
+  text-decoration: none;
+}
+section {
+  /* used just to separate different styles */
+  border-bottom: 1px solid #e6e6e6;
+  padding: 4em 0;
+}
+section h2 {
+  width: 90%;
+  margin: 0 auto 2em;
+  color: #2c3f4c;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1170px) {
+  section {
+    padding: 6em 0;
+  }
+  section h2 {
+    margin: 0 auto 3em;
+  }
+}
+
+header {
+  background: #2c3f4c;
+  position: relative;
+}
+header h1 {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4em 0;
+  color: #ffffff;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  font-size: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}

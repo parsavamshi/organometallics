@@ -1,0 +1,92 @@
+<div class="products">
+  <app-products-nav></app-products-nav>
+
+  <div class="container">
+    <div class="table-2 m-5 mx-0">
+      <!-- <h1 class="text-center m-5 mx-0 p-2 px-0">Up Coming Products</h1> -->
+      <h2 class="">METAL AMIDES & ALKOXIDES</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">Product Details</th>
+            <th scope="col">Insolvents</th>
+            <th scope="col">CAS No.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of productData">
+            <th scope="row">{{ product.id }}</th>
+            <td>{{ product.productName }}</td>
+            <td>{{ product.productSolvents }}</td>
+            <td>{{ product.productCasNumber }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-3 m-5 mx-0">
+      <h2 class="">GRIGNARD REAGENTS</h2>
+      <table class="table table-striped">
+        <tbody>
+          <tr *ngFor="let product2 of productsData2">
+            <th scope="row">{{ product2.id }}</th>
+            <td>{{ product2.productName }}</td>
+            <td>{{ product2.productSolvents }}</td>
+            <td>{{ product2.productCasNumber }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-4 m-5 mx-0">
+      <h2 class="">TURBO GRIGNARDS</h2>
+      <table class="table table-striped">
+        <tbody>
+          <tr *ngFor="let product3 of productsData3">
+            <th scope="row">{{ product3.id }}</th>
+            <td>{{ product3.productName }}</td>
+            <td>{{ product3.productSolvents }}</td>
+            <!-- <td>{{product3.productCasNumber}}</td> -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-5 m-5 mx-0">
+      <h2 class="">OTHER PRODUCTS</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">Product Details</th>
+            <th scope="col">Insolvents</th>
+            <th scope="col">CAS No.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product4 of productsData4">
+            <th scope="row">{{ product4.id }}</th>
+            <td>{{ product4.productName }}</td>
+            <td>{{ product4.productSolvents }}</td>
+            <td>{{ product4.productCasNumber }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-4 m-5 mx-0">
+      <h2 class="">LITHIUM SALTS</h2>
+      <table class="table table-striped">
+        <tbody>
+          <tr *ngFor="let product4 of lithiumSalts">
+            <td style="width: 500px ;">
+              <span class="me-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                </svg>
+              </span>{{ product4.productName }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

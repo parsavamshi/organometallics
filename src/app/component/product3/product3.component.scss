@@ -1,0 +1,129 @@
+.product1{
+  margin-top: 10rem;
+}
+h2{
+  font-family: 'Montserrat-Medium';
+}
+// ul{
+//   list-style: disc !important;
+//   padding: 0;
+// }
+ul{
+  li{
+    font-family: 'Montserrat-light';
+    list-style: disc;
+  }
+}
+p{
+  font-family: 'Montserrat-light';
+}
+
+
+@media (min-width:320px) and (max-width:768px){
+  .product1{
+    margin-top: 6rem;
+  }
+  .row{
+    flex-direction: column;
+    text-align: center;
+  }
+h3{
+    font-size: 17px;
+  }
+
+  ul{
+    li{
+      font-size: 12px;
+    }
+  }
+  p{
+    font-size: 12px;
+  }
+}
+
+@media (min-width:769px) and (max-width:999px){
+  .product1{
+    margin-top: 7rem;
+  }
+  .row{
+    flex-direction: column;
+    text-align: center;
+  }
+h3{
+    font-size: 19px;
+  }
+
+  ul{
+    li{
+      font-size: 13.2px;
+    }
+  }
+  p{
+    font-size: 13.2px;
+  }
+}
+
+@media (min-width:1000px) and (max-width:1220px){
+  .product1{
+    margin-top: 7.8rem;
+  }
+  .row{
+    flex-direction: row;
+    // text-align: center;
+  }
+h3{
+    font-size: 22px;
+  }
+
+  ul{
+    li{
+      font-size: 14px;
+    }
+  }
+  p{
+    font-size: 14px;
+  }
+}
+@media (min-width:1221px) and (max-width:1440px){
+  .product1{
+    margin-top: 8.5rem;
+  }
+  .row{
+    flex-direction: row;
+    // text-align: center;
+  }
+h3{
+    font-size: 23px;
+  }
+
+  ul{
+    li{
+      font-size: 14.5px;
+    }
+  }
+  p{
+    font-size: 14.5px;
+  }
+}
+
+@media (min-width:1550px){
+  .product1{
+    margin-top: 9rem;
+  }
+  .row{
+    flex-direction: row;
+    // text-align: center;
+  }
+h3{
+    font-size: 26px;
+  }
+
+  ul{
+    li{
+      font-size: 16px;
+    }
+  }
+  p{
+    font-size: 16px;
+  }
+}

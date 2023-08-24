@@ -1,0 +1,214 @@
+<a
+  class="close-navbar-toggler collapsed"
+  data-toggle="collapse"
+  data-target="#navbarSupportedContent"
+  aria-controls="navbarSupportedContent"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+  (click)="closeNavbar()"
+></a>
+
+<nav
+  class="navbar navbar-expand-lg navbar-light"
+  [class.active]="classApplied"
+  ngStickyNav
+  stickyClass="sticky-box-shadow"
+  ngStickyNav
+  [ngClass]="statusClass"
+>
+  <div class="container-fluid">
+    <div class="brandlogos">
+      <a  routerlink="/home" class="logo1" rel="ugc" href="/">
+        <img
+          src="../../../assets/images/logos/Organo-Metallics.svg"
+          alt=""
+          class="brandlogo1"
+        />
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" (click)="toggleClass()">
+      <span class="burger-menu">
+        <span class="top-bar"></span>
+        <span class="middle-bar"></span>
+        <span class="bottom-bar"></span>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto align-items-center">
+        <li class="nav-item">
+          <span
+            routerLink="/home"
+            routerLinkActive="active"
+            class="nav-link"
+            (click)="scrollToTop()"
+            >Home</span
+          >
+        </li>
+        <li class="nav-item">
+          <span
+            routerLink="/about-us"
+            routerLinkActive="active"
+            class="nav-link"
+            (click)="scrollToTop()"
+            >About Us</span
+          >
+        </li>
+        <li class="nav-item  dropdown-link2 dropdown-nav">
+          <div class="dropdown">
+            <span class=" nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" routerLink="/Products"
+            routerLinkActive="active" (click)="scrollToTop()">
+           Products
+            </span>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item"  rel="ugc"  routerLink="/Products"
+                routerLinkActive="active"    (click)="scrollToTop()" >Products</a></li>
+              <li><a class="dropdown-item link2"  rel="ugc" routerLink="up-coming-products"
+                routerLinkActive="active"    (click)="scrollToTop()" >Upcoming Products</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <span
+            routerLink="/reaction-capabilities"
+            routerLinkActive="active"
+            class="nav-link"
+            (click)="scrollToTop()"
+            >Reaction Capabilities</span
+          >
+        </li>
+        <li class="nav-item">
+          <span
+            routerLink="/careers"
+            routerLinkActive="active"
+            class="nav-link"
+            (click)="scrollToTop()"
+            >Careers</span
+          >
+        </li>
+        <!-- <li class="nav-item">
+          <span
+            routerLink="/gallery"
+            routerLinkActive="active"
+            class="nav-link"
+            (click)="scrollToTop()"
+            >Gallery</span
+          >
+        </li> -->
+        <li class="nav-item">
+          <span class="nav-link" routerLink="/gallery"  routerLinkActive="active">
+            Gallery
+          </span>
+        </li>
+        <li class="nav-item">
+            <span
+              routerLink="/blog"
+              routerLinkActive="active"
+              class="nav-link"
+              (click)="scrollToTop()"
+              >Blog</span
+            >
+          </li>
+
+        <li class="nav-item">
+          <span
+            routerLink="/contact-us"
+            routerLinkActive="active"
+            class="nav-link"
+            (click)="scrollToTop()"
+          >
+            Contact Us</span
+          >
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto for-responsive">
+
+        <li class="nav-item">
+            <span
+              routerLink="/home"
+              routerLinkActive="active"
+              class="nav-link"
+              (click)="scrollToTop()"
+              (click)="closeNavbar()"
+              >Home</span
+            >
+          </li>
+          <li class="nav-item">
+            <span
+              routerLink="/about-us"
+              routerLinkActive="active"
+              class="nav-link"
+            (click)="scrollToTop()"
+            (click)="closeNavbar()"
+              >About Us</span
+            >
+          </li>
+          <li class="nav-item  dropdown-link2 dropdown-nav">
+            <div class="dropdown">
+              <span class=" nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" routerLink="Products"
+              routerLinkActive="active"  (click)="closeNavbar()">
+              Products
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" rel="ugc"  routerLink = "Products"
+                routerLinkActive="active"  (click)="scrollToTop()" (click)="closeNavbar()">Products</a></li>
+              <li><a class="dropdown-item" rel="ugc" routerLink="up-coming-products"
+                routerLinkActive="active"  (click)="scrollToTop()" (click)="closeNavbar()">Up-Coming-Products</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <span
+            routerLink="/reaction-capabilities"
+            routerLinkActive="active"
+            class="nav-link"
+            (click)="scrollToTop()"
+            (click)="closeNavbar()"
+            >Reaction Capabilities</span
+          >
+          </li>
+          <li class="nav-item">
+            <span
+              routerLink="/careers"
+              routerLinkActive="active"
+              class="nav-link"
+            (click)="scrollToTop()"
+            (click)="closeNavbar()"
+              >Careers</span
+            >
+          </li>
+
+          <li class="nav-item">
+            <span
+              routerLink="/gallery"
+              routerLinkActive="active"
+              class="nav-link"
+            (click)="scrollToTop()"
+            (click)="closeNavbar()"
+              >Gallery</span
+            >
+          </li>
+          <li class="nav-item">
+              <span
+                routerLink="/blog"
+                routerLinkActive="active"
+                class="nav-link"
+              (click)="scrollToTop()"
+            (click)="closeNavbar()"
+                >Blog</span
+              >
+            </li>
+          <li class="nav-item">
+            <span
+              routerLink="/contact-us"
+              routerLinkActive="active"
+              class="nav-link"
+              (click)="scrollToTop()"
+            (click)="closeNavbar()"
+            >
+              Contact Us</span
+            >
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
